@@ -1,0 +1,34 @@
+{
+  "name": "memor.me",
+  "version": "1.0.0",
+  "description": "App for verbally memorizing exact text",
+  "main": "server/index.js",
+  "scripts": {
+    "start:dev": "nodemon server/index.js",
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanstholmes/memor.me.git"
+  },
+  "author": "jordanstholmes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanstholmes/memor.me/issues"
+  },
+  "homepage": "https://github.com/jordanstholmes/memor.me#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "nodemon": "^2.0.7"
+  }
+}
