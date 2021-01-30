@@ -5,7 +5,8 @@
   "main": "server/index.js",
   "scripts": {
     "start:dev": "nodemon server/index.js",
-    "start": "node server/index.js",
+    "build:dev": "webpack --watch",
+    "start": "webpack && node server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,8 +20,16 @@
   },
   "homepage": "https://github.com/jordanstholmes/memor.me#readme",
   "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
     "express": "^4.17.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.4.0"
   },
   "devDependencies": {
     "eslint": "^7.18.0",
